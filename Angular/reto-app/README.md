@@ -35,7 +35,7 @@ Borrar la cache de NPM de nuevo:
 npm cache clean --force
 
 # Paso 6. 
-Instalar la última versión de Angular CLI para instalar Angular 7:
+Instalar la última versión de Angular CLI para instalar Angular 11:
 
 npm install -g @angular/cli@latest
 
