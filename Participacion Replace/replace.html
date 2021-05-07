@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Da click para cambiar el nombre</p>
+
+<p id="demo">Hola todos!</p>
+
+<button onclick="myFunction()">prueba</button>
+
+<p>
+  Da click para verificar si incluye una palabra en especifico</p>
+<p id="demo2"></p>
+
+<button onclick="myFunction2()">prueba</button>
+
+<p>
+  Da click para verificar repetir</p>
+<p id="demo3"></p>
+
+<button onclick="myFunction3()">prueba</button>
+
+<button onclick="myFunction4()">Numero</button>
+<p id="demo4"></p>
+
+<p id="demo5"></p>
+
+<p id="demo6"></p>
+
+<script>
+function myFunction() {
+  let str = document.getElementById("demo").innerHTML; 
+  let res = str.replace("todos", "Vanne");
+  document.getElementById("demo").innerHTML = res;
+
+}
+
+function myFunction2(){
+let str = document.getElementById("demo").innerHTML;
+let res = str.includes("Vanne");
+document.getElementById("demo2").innerHTML = res;
+
+}
+function myFunction3(){
+let str = document.getElementById("demo").innerHTML;
+document.getElementById("demo3").innerHTML = str.repeat(2);
+
+}
+
+function myFunction4(){
+let Numero= Number(123e-4);
+document.getElementById("demo4").innerHTML = Numero;
+document.getElementById("demo5").innerHTML = parseInt(Numero);
+document.getElementById("demo6"),innerHTML = parseFloat("10");
+}
+
+</script>
+
+</body>
+</html>
